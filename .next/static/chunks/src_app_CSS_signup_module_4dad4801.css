@@ -1,0 +1,145 @@
+/* [project]/src/app/CSS/signup.module.css [app-client] (css) */
+.signup-module__rKhhRq__container {
+  background-color: #4a7a9e;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+}
+
+.signup-module__rKhhRq__formCard {
+  backdrop-filter: blur(10px);
+  background-color: #4a7a9e;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px #0003;
+}
+
+.signup-module__rKhhRq__logoContainer {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.signup-module__rKhhRq__logo {
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  position: relative;
+}
+
+.signup-module__rKhhRq__title {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.signup-module__rKhhRq__formGroup {
+  margin-bottom: 20px;
+}
+
+.signup-module__rKhhRq__formGroup label {
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 16px;
+  display: block;
+}
+
+.signup-module__rKhhRq__formGroup input {
+  background-color: #fffc;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  transition: all .3s;
+}
+
+.signup-module__rKhhRq__formGroup input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #1f4e70;
+}
+
+.signup-module__rKhhRq__inputError {
+  background-color: #ff6b6b1a !important;
+  border: 1px solid #ff6b6b !important;
+}
+
+.signup-module__rKhhRq__errorMessage {
+  color: #ff6b6b;
+  margin-top: 5px;
+  font-size: 14px;
+  display: block;
+}
+
+.signup-module__rKhhRq__formError {
+  color: #ff6b6b;
+  text-align: center;
+  background-color: #ff6b6b33;
+  border: 1px solid #ff6b6b;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 12px;
+}
+
+.signup-module__rKhhRq__loginLink {
+  text-align: right;
+  color: #fff;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  display: flex;
+}
+
+.signup-module__rKhhRq__loginLink a {
+  color: #a0d2eb;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.signup-module__rKhhRq__loginLink a:hover {
+  text-decoration: underline;
+}
+
+.signup-module__rKhhRq__signupButton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #2c507e;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color .3s;
+  display: block;
+}
+
+.signup-module__rKhhRq__signupButton:hover {
+  background-color: #1f4e70;
+}
+
+@media (width <= 480px) {
+  .signup-module__rKhhRq__formCard {
+    padding: 30px 20px;
+  }
+
+  .signup-module__rKhhRq__title {
+    font-size: 20px;
+  }
+
+  .signup-module__rKhhRq__signupButton {
+    padding: 12px;
+  }
+}
+
+
+/*# sourceMappingURL=src_app_CSS_signup_module_4dad4801.css.map*/

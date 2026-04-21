@@ -1,0 +1,26 @@
+/* [project]/src/app/components_css/userbuttons.module.css [app-client] (css) */
+.userbuttons-module__yejETq__userActions {
+  margin-left: auto;
+}
+
+.userbuttons-module__yejETq__editButton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #386680;
+  border: none;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 146px;
+  padding: 10px 20px;
+  font-size: 16px;
+  display: flex;
+}
+
+.userbuttons-module__yejETq__plusIcon {
+  align-items: center;
+  margin-left: 10px;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_app_components_css_userbuttons_module_css_f9ee138c._.single.css.map*/

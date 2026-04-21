@@ -1,0 +1,274 @@
+/* [project]/src/app/CSS/details.module.css [app-client] (css) */
+.details-module__zr9gtW__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+
+.details-module__zr9gtW__content {
+  background-color: #c5d8e4;
+  border-radius: 22px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  width: 90%;
+  margin-top: 1rem;
+  margin-left: 50px;
+  padding: 1rem;
+  display: grid;
+}
+
+.details-module__zr9gtW__mainImageContainer {
+  border-radius: 22px;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.details-module__zr9gtW__mainImage {
+  object-fit: cover;
+  border-radius: 22px;
+  width: 100%;
+}
+
+.details-module__zr9gtW__galleryContainer {
+  box-sizing: border-box;
+  background-color: #4c7a9d;
+  border-radius: 22px;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+}
+
+.details-module__zr9gtW__galleryGrid {
+  box-sizing: border-box;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+}
+
+.details-module__zr9gtW__galleryGrid img {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+  height: 155px;
+  display: block;
+}
+
+.details-module__zr9gtW__detailsContainer {
+  background-color: #4c7a9d;
+  border-radius: 22px;
+  height: 290px;
+}
+
+.details-module__zr9gtW__leftColumn, .details-module__zr9gtW__rightColumn {
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+}
+
+.details-module__zr9gtW__locationBar {
+  color: #fff;
+  border-radius: 22px;
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+}
+
+.details-module__zr9gtW__locationIcon {
+  color: #fff;
+  margin-right: .5rem;
+}
+
+.details-module__zr9gtW__locationText {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.details-module__zr9gtW__reviewCard {
+  background-color: #fff;
+  border-radius: 22px;
+  width: 84%;
+  margin-top: -15px;
+  margin-left: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px #0000000d;
+}
+
+.details-module__zr9gtW__reviewerInfo {
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.details-module__zr9gtW__reviewerAvatar {
+  background-color: #3f8cb5;
+  background-size: cover;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.details-module__zr9gtW__reviewerName {
+  color: #333;
+  font-weight: 500;
+}
+
+.details-module__zr9gtW__rating {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.details-module__zr9gtW__starIcon {
+  color: #e0e0e0;
+  margin-right: .25rem;
+}
+
+.details-module__zr9gtW__starIcon:first-child {
+  color: gold;
+}
+
+.details-module__zr9gtW__reviewHeading {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
+}
+
+.details-module__zr9gtW__reviewText {
+  color: #555;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.details-module__zr9gtW__bookingCard {
+  background-color: #fff;
+  border-radius: 22px;
+  flex-direction: column;
+  gap: 4.6rem;
+  height: 255px;
+  padding: 1rem;
+  display: flex;
+  box-shadow: 0 2px 4px #0000000d;
+}
+
+.details-module__zr9gtW__dateSelection {
+  gap: .5rem;
+  display: flex;
+}
+
+.details-module__zr9gtW__dateBox {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 22px;
+  flex: 1;
+  padding: .5rem;
+}
+
+.details-module__zr9gtW__dateLabel {
+  color: #333;
+  margin-bottom: .25rem;
+  font-size: .8rem;
+  font-weight: bold;
+  display: block;
+}
+
+.details-module__zr9gtW__dateValue {
+  color: #333;
+  font-size: .9rem;
+}
+
+.details-module__zr9gtW__propertyDetails {
+  flex-direction: column;
+  gap: 2rem;
+  display: flex;
+}
+
+.details-module__zr9gtW__headingPriceRow {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.details-module__zr9gtW__propertyDetailsHeading {
+  color: #333;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.details-module__zr9gtW__price {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.details-module__zr9gtW__amenities {
+  gap: 1rem;
+  display: flex;
+}
+
+.details-module__zr9gtW__amenity {
+  color: #333;
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+}
+
+.details-module__zr9gtW__specifications {
+  color: #333;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.details-module__zr9gtW__spec {
+  align-items: center;
+  gap: .25rem;
+  display: flex;
+}
+
+.details-module__zr9gtW__specDot {
+  color: #666;
+  margin: 0 .25rem;
+}
+
+.details-module__zr9gtW__reserveButton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #4c7a9d;
+  border: none;
+  border-radius: 22px;
+  width: 100%;
+  padding: .75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color .2s;
+}
+
+.details-module__zr9gtW__reserveButton:hover {
+  background-color: #3a5d79;
+}
+
+@media (width <= 768px) {
+  .details-module__zr9gtW__detailsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .details-module__zr9gtW__searchBar {
+    width: 200px;
+  }
+
+  .details-module__zr9gtW__galleryGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=src_app_CSS_details_module_css_f9ee138c._.single.css.map*/

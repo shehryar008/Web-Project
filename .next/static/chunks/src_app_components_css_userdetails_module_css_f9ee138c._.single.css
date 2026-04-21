@@ -1,0 +1,46 @@
+/* [project]/src/app/components_css/userdetails.module.css [app-client] (css) */
+.userdetails-module__N_bomq__userProfile {
+  align-items: center;
+  display: flex;
+}
+
+.userdetails-module__N_bomq__userAvatar {
+  background-color: #eaf5f9;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  display: flex;
+}
+
+.userdetails-module__N_bomq__avatarIcon {
+  color: #0095c8;
+}
+
+.userdetails-module__N_bomq__userDetails {
+  flex-grow: 1;
+}
+
+.userdetails-module__N_bomq__userName {
+  color: #fff;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.userdetails-module__N_bomq__userId {
+  color: #e5f2f7;
+  font-size: 14px;
+}
+
+.userdetails-module__N_bomq__avatarImage {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: 4px;
+}
+
+/*# sourceMappingURL=src_app_components_css_userdetails_module_css_f9ee138c._.single.css.map*/

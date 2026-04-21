@@ -1,0 +1,122 @@
+/* [project]/src/app/CSS/owner.module.css [app-client] (css) */
+.owner-module__iPYztG__userInfoContainer {
+  background-color: #80b3c7;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 1400px;
+  margin: 60px auto;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.owner-module__iPYztG__userHeader {
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.owner-module__iPYztG__commentsContainer {
+  background-color: #386680;
+  border-radius: 16px;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+.owner-module__iPYztG__commentCard {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+.owner-module__iPYztG__commentImage {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.owner-module__iPYztG__commentImage img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.owner-module__iPYztG__commentContent {
+  padding: 20px;
+}
+
+.owner-module__iPYztG__commentHeader {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.owner-module__iPYztG__commentUser {
+  align-items: center;
+  display: flex;
+}
+
+.owner-module__iPYztG__commentUserAvatar {
+  background-color: #eaf5f9;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  display: flex;
+}
+
+.owner-module__iPYztG__commentUserName {
+  color: #333;
+  font-size: 16px;
+}
+
+.owner-module__iPYztG__commentTitle {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.owner-module__iPYztG__commentText {
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.owner-module__iPYztG__ratingStars {
+  display: flex;
+}
+
+.owner-module__iPYztG__star {
+  color: #d1d1d1;
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+.owner-module__iPYztG__activeStar {
+  color: #ffc107;
+}
+
+@media (width <= 768px) {
+  .owner-module__iPYztG__userInfoContainer {
+    margin: 0;
+  }
+
+  .owner-module__iPYztG__commentCard {
+    flex-direction: column;
+  }
+
+  .owner-module__iPYztG__commentImage {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=src_app_CSS_owner_module_css_f9ee138c._.single.css.map*/

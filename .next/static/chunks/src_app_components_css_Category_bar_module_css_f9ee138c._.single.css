@@ -1,0 +1,104 @@
+/* [project]/src/app/components_css/Category_bar.module.css [app-client] (css) */
+.Category_bar-module__R5AYLa__categoryBar {
+  scrollbar-width: none;
+  background-color: #4a6b82;
+  border-radius: 30px;
+  max-width: 100%;
+  margin: 1.5rem auto;
+  padding: .8rem 1.5rem;
+  overflow-x: auto;
+  box-shadow: 0 4px 12px #0000001a;
+}
+
+.Category_bar-module__R5AYLa__categoryBar::-webkit-scrollbar {
+  display: none;
+}
+
+.Category_bar-module__R5AYLa__categoryScroll {
+  justify-content: space-between;
+  gap: 2rem;
+  min-width: max-content;
+  display: flex;
+}
+
+.Category_bar-module__R5AYLa__categoryItem {
+  color: #fff;
+  cursor: pointer;
+  opacity: .8;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  height: 32px;
+  transition: opacity .2s, transform .2s;
+  display: flex;
+}
+
+.Category_bar-module__R5AYLa__categoryItem svg {
+  width: 20px;
+  height: 20px;
+}
+
+.Category_bar-module__R5AYLa__categoryItem:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.Category_bar-module__R5AYLa__categoryIcon {
+  filter: brightness(0) invert();
+  opacity: .85;
+  transition: opacity .2s, transform .2s;
+}
+
+.Category_bar-module__R5AYLa__categoryItem:hover .Category_bar-module__R5AYLa__categoryIcon {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.Category_bar-module__R5AYLa__categoryItem.Category_bar-module__R5AYLa__active {
+  color: #fff;
+  opacity: 1;
+  border-bottom: 2px solid #000;
+  transform: translateY(-2px);
+}
+
+.Category_bar-module__R5AYLa__categoryItem.Category_bar-module__R5AYLa__active .Category_bar-module__R5AYLa__categoryLabel {
+  color: #fff;
+  font-weight: bold;
+}
+
+.Category_bar-module__R5AYLa__categoryItem.Category_bar-module__R5AYLa__active .Category_bar-module__R5AYLa__categoryIcon {
+  opacity: 1;
+  filter: brightness(1.5);
+  transform: scale(1.1);
+}
+
+@media (width <= 768px) {
+  .Category_bar-module__R5AYLa__header {
+    flex-direction: column;
+    gap: .75rem;
+    padding: .75rem;
+  }
+
+  .Category_bar-module__R5AYLa__searchBox {
+    max-width: 90%;
+    margin: .5rem 0;
+  }
+
+  .Category_bar-module__R5AYLa__categoryBar {
+    border-radius: 20px;
+    max-width: 100%;
+    padding: .5rem 1rem;
+  }
+
+  .Category_bar-module__R5AYLa__categoryScroll {
+    gap: 2rem;
+  }
+
+  .Category_bar-module__R5AYLa__destinationsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 1rem;
+  }
+}
+
+/*# sourceMappingURL=src_app_components_css_Category_bar_module_css_f9ee138c._.single.css.map*/

@@ -1,0 +1,192 @@
+/* [project]/src/app/CSS/login.module.css [app-client] (css) */
+.login-module__CAKO-q__container {
+  background-color: #4a7a9e;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+}
+
+.login-module__CAKO-q__loginCard {
+  background-color: #4a7a9e;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px #0003;
+}
+
+.login-module__CAKO-q__logoContainer {
+  justify-content: center;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.login-module__CAKO-q__logo {
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  position: relative;
+}
+
+.login-module__CAKO-q__title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.login-module__CAKO-q__form {
+  flex-direction: column;
+  gap: 1.2rem;
+  display: flex;
+}
+
+.login-module__CAKO-q__inputGroup {
+  flex-direction: column;
+  gap: .5rem;
+  display: flex;
+}
+
+.login-module__CAKO-q__label {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.login-module__CAKO-q__input {
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1rem;
+}
+
+.login-module__CAKO-q__optionsRow {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.login-module__CAKO-q__checkboxContainer {
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+}
+
+.login-module__CAKO-q__checkbox {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.login-module__CAKO-q__checkboxLabel {
+  color: #fff;
+  font-size: .9rem;
+}
+
+.login-module__CAKO-q__forgotPassword {
+  color: #fff;
+  font-size: .9rem;
+  text-decoration: none;
+}
+
+.login-module__CAKO-q__forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.login-module__CAKO-q__loginButton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #2b4d70;
+  border: none;
+  border-radius: .5rem;
+  margin-top: .5rem;
+  padding: .75rem;
+  font-size: 1rem;
+  transition: background-color .2s;
+}
+
+.login-module__CAKO-q__loginButton:hover {
+  background-color: #1e3a57;
+}
+
+.login-module__CAKO-q__socialLogin {
+  flex-direction: column;
+  gap: .8rem;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.login-module__CAKO-q__socialButton {
+  cursor: pointer;
+  border: none;
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: .75rem;
+  font-size: .9rem;
+  transition: opacity .2s;
+  display: flex;
+}
+
+.login-module__CAKO-q__socialButton:hover {
+  opacity: .9;
+}
+
+.login-module__CAKO-q__facebookButton {
+  color: #fff;
+  background-color: #1877f2;
+}
+
+.login-module__CAKO-q__googleButton {
+  color: #757575;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.login-module__CAKO-q__socialIcon {
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  display: flex;
+}
+
+.login-module__CAKO-q__signupContainer {
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.login-module__CAKO-q__noAccount {
+  color: #fff;
+  font-size: .9rem;
+}
+
+.login-module__CAKO-q__signupLink {
+  color: #fff;
+  font-size: .9rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-module__CAKO-q__signupLink:hover {
+  text-decoration: underline;
+}
+
+@media (width <= 480px) {
+  .login-module__CAKO-q__loginCard {
+    padding: 1.5rem;
+  }
+
+  .login-module__CAKO-q__title {
+    font-size: 1.3rem;
+  }
+}
+
+/*# sourceMappingURL=src_app_CSS_login_module_css_f9ee138c._.single.css.map*/

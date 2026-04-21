@@ -1,0 +1,116 @@
+/* [project]/src/app/components_css/Navbar.module.css [app-client] (css) */
+.Navbar-module__-qagsW__header {
+  z-index: 100;
+  background-color: #a3c6d9;
+  justify-content: space-between;
+  align-items: center;
+  width: 96vw;
+  height: 50px;
+  margin-left: calc(50% - 50vw);
+  padding: .75rem 2rem;
+  display: flex;
+  position: relative;
+  top: 0;
+  box-shadow: 0 2px 10px #0000001a;
+}
+
+.Navbar-module__-qagsW__text {
+  color: #1a2c3b;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Navbar-module__-qagsW__logo {
+  color: #2c3e50;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.Navbar-module__-qagsW__searchBox {
+  background-color: #fff;
+  border-radius: 999px;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  padding: .5rem 1rem;
+  display: flex;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.Navbar-module__-qagsW__searchInput {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: .25rem .5rem;
+  font-size: 1rem;
+}
+
+.Navbar-module__-qagsW__searchButton {
+  cursor: pointer;
+  color: #555;
+  background: none;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  padding: .25rem;
+  display: flex;
+}
+
+.Navbar-module__-qagsW__userInfo {
+  color: #2c3e50;
+  align-items: center;
+  gap: .75rem;
+  font-weight: 700;
+  display: flex;
+}
+
+.Navbar-module__-qagsW__userAvatar {
+  color: #4a6b82;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+@media (width <= 768px) {
+  .Navbar-module__-qagsW__header {
+    flex-direction: column;
+    gap: .75rem;
+    padding: .75rem;
+  }
+
+  .Navbar-module__-qagsW__searchBox {
+    max-width: 90%;
+    margin: .5rem 0;
+  }
+
+  .Navbar-module__-qagsW__categoryBar {
+    border-radius: 20px;
+    max-width: 100%;
+    padding: .5rem 1rem;
+  }
+
+  .Navbar-module__-qagsW__categoryScroll {
+    gap: 2rem;
+  }
+
+  .Navbar-module__-qagsW__destinationsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 1rem;
+  }
+}
+
+
+/*# sourceMappingURL=src_app_components_css_Navbar_module_dc46de30.css.map*/

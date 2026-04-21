@@ -1,0 +1,17 @@
+{
+  "/AddHotel/page": "app/AddHotel/page.js",
+  "/EditInfo/page": "app/EditInfo/page.js",
+  "/Search/page": "app/Search/page.js",
+  "/UserInfo/page": "app/UserInfo/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/auth/signup/route": "app/api/auth/signup/route.js",
+  "/details/[id]/page": "app/details/[id]/page.js",
+  "/home/[categories]/page": "app/home/[categories]/page.js",
+  "/home/page": "app/home/page.js",
+  "/login/page": "app/login/page.js",
+  "/owner/page": "app/owner/page.js",
+  "/page": "app/page.js",
+  "/payment/[hotelId]/page": "app/payment/[hotelId]/page.js",
+  "/signup/page": "app/signup/page.js"
+}

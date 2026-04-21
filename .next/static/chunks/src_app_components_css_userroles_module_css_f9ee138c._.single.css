@@ -1,0 +1,23 @@
+/* [project]/src/app/components_css/userroles.module.css [app-client] (css) */
+.userroles-module__bY4INW__userRoles {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.userroles-module__bY4INW__roleTab {
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  flex: 1;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.userroles-module__bY4INW__activeTab {
+  background-color: #386680;
+  border-radius: 12px;
+}
+
+/*# sourceMappingURL=src_app_components_css_userroles_module_css_f9ee138c._.single.css.map*/

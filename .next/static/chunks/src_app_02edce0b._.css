@@ -1,0 +1,326 @@
+/* [project]/src/app/components_css/Navbar.module.css [app-client] (css) */
+.Navbar-module__-qagsW__header {
+  z-index: 100;
+  background-color: #a3c6d9;
+  justify-content: space-between;
+  align-items: center;
+  width: 96vw;
+  height: 50px;
+  margin-left: calc(50% - 50vw);
+  padding: .75rem 2rem;
+  display: flex;
+  position: relative;
+  top: 0;
+  box-shadow: 0 2px 10px #0000001a;
+}
+
+.Navbar-module__-qagsW__text {
+  color: #1a2c3b;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Navbar-module__-qagsW__logo {
+  color: #2c3e50;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.Navbar-module__-qagsW__searchBox {
+  background-color: #fff;
+  border-radius: 999px;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  padding: .5rem 1rem;
+  display: flex;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.Navbar-module__-qagsW__searchInput {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: .25rem .5rem;
+  font-size: 1rem;
+}
+
+.Navbar-module__-qagsW__searchButton {
+  cursor: pointer;
+  color: #555;
+  background: none;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  padding: .25rem;
+  display: flex;
+}
+
+.Navbar-module__-qagsW__userInfo {
+  color: #2c3e50;
+  align-items: center;
+  gap: .75rem;
+  font-weight: 700;
+  display: flex;
+}
+
+.Navbar-module__-qagsW__userAvatar {
+  color: #4a6b82;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+@media (width <= 768px) {
+  .Navbar-module__-qagsW__header {
+    flex-direction: column;
+    gap: .75rem;
+    padding: .75rem;
+  }
+
+  .Navbar-module__-qagsW__searchBox {
+    max-width: 90%;
+    margin: .5rem 0;
+  }
+
+  .Navbar-module__-qagsW__categoryBar {
+    border-radius: 20px;
+    max-width: 100%;
+    padding: .5rem 1rem;
+  }
+
+  .Navbar-module__-qagsW__categoryScroll {
+    gap: 2rem;
+  }
+
+  .Navbar-module__-qagsW__destinationsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 1rem;
+  }
+}
+
+
+/* [project]/src/app/CSS/payment.module.css [app-client] (css) */
+.payment-module__TpO2KG__container {
+  box-sizing: border-box;
+  background-color: #a3c5d9;
+  border-radius: 22px;
+  width: 80%;
+  min-height: 77vh;
+  margin: 50px 50px 50px 126px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.payment-module__TpO2KG__paymentContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.payment-module__TpO2KG__title {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.payment-module__TpO2KG__formContainer {
+  background-color: #507a96;
+  border-radius: 22px;
+  margin-top: 20px;
+  padding: 25px;
+}
+
+.payment-module__TpO2KG__formInnerContainer {
+  background-color: #8cb4c9;
+  border-radius: 22px;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.payment-module__TpO2KG__formGroup {
+  margin-bottom: 20px;
+}
+
+.payment-module__TpO2KG__formRow {
+  gap: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.payment-module__TpO2KG__formGroupHalf {
+  flex: 1;
+}
+
+.payment-module__TpO2KG__formLabel {
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+}
+
+.payment-module__TpO2KG__input {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 18px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.payment-module__TpO2KG__cardNumberContainer {
+  position: relative;
+}
+
+.payment-module__TpO2KG__cardIcons {
+  gap: 5px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.payment-module__TpO2KG__cardIcon {
+  height: 24px;
+}
+
+.payment-module__TpO2KG__cvcContainer {
+  position: relative;
+}
+
+.payment-module__TpO2KG__cvcHelp {
+  color: #666;
+  cursor: pointer;
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.payment-module__TpO2KG__selectContainer {
+  position: relative;
+}
+
+.payment-module__TpO2KG__select {
+  appearance: none;
+  background-color: #fff;
+  border: none;
+  border-radius: 18px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.payment-module__TpO2KG__selectArrow {
+  color: #888;
+  pointer-events: none;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.payment-module__TpO2KG__doneButton {
+  color: #333;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 18px;
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 66px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.payment-module__TpO2KG__doneButton:hover {
+  background-color: #f5f5f5;
+}
+
+.payment-module__TpO2KG__header {
+  background-color: #a3c5d9;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  display: flex;
+}
+
+.payment-module__TpO2KG__logo {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.payment-module__TpO2KG__searchContainer {
+  background-color: #fff;
+  border-radius: 20px;
+  align-items: center;
+  padding: 5px 15px;
+  display: flex;
+}
+
+.payment-module__TpO2KG__searchInput {
+  border: none;
+  width: 250px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.payment-module__TpO2KG__searchButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.payment-module__TpO2KG__userInfo {
+  align-items: center;
+  display: flex;
+}
+
+.payment-module__TpO2KG__userName {
+  color: #333;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.payment-module__TpO2KG__userAvatar {
+  color: #fff;
+  background-color: #507a96;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
+
+/*# sourceMappingURL=src_app_02edce0b._.css.map*/
