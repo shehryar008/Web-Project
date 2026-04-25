@@ -1,0 +1,108 @@
+.categoryBar {
+    background-color: #4a6b82;
+    border-radius: 30px;
+    padding: 0.8rem 1.5rem;
+    /* Reduced vertical padding */
+    margin: 1.5rem auto;
+    /* Reduced margin */
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.categoryBar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+}
+
+.categoryScroll {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    min-width: max-content;
+}
+
+.categoryItem {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 32px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.categoryItem svg {
+    width: 20px;
+    /* Reduced from default 24px */
+    height: 20px;
+    /* Reduced from default 24px */
+}
+
+.categoryItem:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.categoryIcon {
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.categoryItem:hover .categoryIcon {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.categoryItem.active {
+    color: #fff;
+    opacity: 1;
+    transform: translateY(-2px);
+    border-bottom: 2px solid black;
+}
+
+.categoryItem.active .categoryLabel {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Highlight icon when active */
+.categoryItem.active .categoryIcon {
+    opacity: 1;
+    filter: brightness(1.5);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+
+    .searchBox {
+        max-width: 90%;
+        margin: 0.5rem 0;
+    }
+
+    .categoryBar {
+        max-width: 100%;
+        border-radius: 20px;
+        padding: 0.5rem 1rem;
+    }
+
+    .categoryScroll {
+        gap: 2rem;
+    }
+
+    .destinationsGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 2rem 1rem;
+    }
+}

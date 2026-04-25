@@ -1,0 +1,43 @@
+.userProfile {
+    display: flex;
+    align-items: center;
+}
+
+.userAvatar {
+    background-color: #eaf5f9;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.avatarIcon {
+    color: #0095c8;
+}
+
+.userDetails {
+    flex-grow: 1;
+}
+
+.userName {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.userId {
+    color: #e5f2f7;
+    font-size: 14px;
+}
+
+.avatarImage {
+    margin-top: 4px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}

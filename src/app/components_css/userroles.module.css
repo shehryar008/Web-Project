@@ -1,0 +1,20 @@
+.userRoles {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.roleTab {
+    border: none;
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.activeTab {
+    background-color: #386680;
+    border-radius: 12px;
+}
