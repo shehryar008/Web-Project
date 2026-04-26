@@ -1,0 +1,233 @@
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    font-family: 'Arial', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #a5cadd;
+    padding-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+}
+
+.userAvatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.avatarIcon {
+    color: #0095c8;
+}
+
+.userName {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+}
+
+.userId {
+    font-size: 14px;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+.saveButton {
+    background-color: #2c5d7c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.saveButton:hover {
+    background-color: #1e4258;
+}
+
+.downloadIcon {
+    margin-left: 10px;
+}
+
+.formContainer {
+    background-color: #3d6c8a;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 20px;
+    color: white;
+}
+
+.formTitle {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.facilitiesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.facilityOption {
+    background-color: white;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.facilityOption:hover {
+    background-color: #f0f0f0;
+}
+
+.facilityOption.selected {
+    background-color: #e6f7ff;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.selected .checkbox {
+    background-color: #0097b2;
+    border-color: #0097b2;
+}
+
+.checkmark {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.facilityName {
+    color: #333;
+    font-size: 14px;
+}
+
+.uploadContainer {
+    width: 100%;
+}
+
+.uploadArea {
+    border: 2px dashed #bbb;
+    border-radius: 6px;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    color: #888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s;
+}
+
+.uploadArea:hover {
+    border-color: #0097b2;
+}
+
+.fileInput {
+    display: none;
+}
+
+.thumbnailPreview {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.thumbnailImage {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.imagesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.imagePreview {
+    position: relative;
+}
+
+.previewImage {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.removeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.removeButton:hover {
+    background-color: rgba(255, 0, 0, 0.9);
+}

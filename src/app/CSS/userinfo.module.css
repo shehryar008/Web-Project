@@ -1,0 +1,92 @@
+.userInfoContainer {
+    background-color: #80b3c7;
+    border-radius: 16px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1400px;
+    margin: 60px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.userHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.commentsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #386680;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.commentCard {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+}
+
+.commentImage {
+    flex: 0 0 30%;
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.commentImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.commentContent {
+    flex: 1;
+    padding: 20px;
+}
+
+.commentTitle {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.commentText {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.ratingStars {
+    display: flex;
+}
+
+.star {
+    font-size: 24px;
+    color: #d1d1d1;
+    margin-right: 5px;
+}
+
+.activeStar {
+    color: #ffc107;
+}
+
+@media (max-width: 768px) {
+    .userInfoContainer{
+        margin: 0px;
+    }
+    .commentCard {
+        flex-direction: column;
+    }
+
+    .commentImage {
+        flex: 0 0 200px;
+        max-height: 200px;
+    }
+}

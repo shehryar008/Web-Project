@@ -1,0 +1,132 @@
+.container {
+    background-color: #8BB5C9;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 65px auto;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.icon {
+    color: #0095c8;
+}
+
+.userName {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.userId {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.saveButton {
+    background-color: #3e6881;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.downloadIcon {
+    margin-left: 10px;
+}
+
+.formContainer {
+    background-color: #3e6881;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.formTitle {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.formGroup {
+    margin-bottom: 25px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 103px;
+}
+
+.input {
+    width: 75%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+    margin-left: 101px;
+}
+
+.uploadArea {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    cursor: pointer;
+    width: 78%;
+    margin: 0 auto;
+}
+
+.uploadIcon {
+    color: #0095c8;
+    margin-bottom: 15px;
+}
+
+.uploadText {
+    color: #333;
+    margin: 0;
+    font-size: 16px;
+}
+
+.previewImage {
+    max-width: 100%;
+    max-height: 200px;
+    /* Adjust as needed */
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 10px;
+    display: block;
+}

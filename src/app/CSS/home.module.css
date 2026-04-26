@@ -1,0 +1,166 @@
+.container {
+  max-width: 1200px;
+  max-height: 200vh;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f9f9f7;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.destinationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 5rem;
+  margin: 3rem 1rem;
+}
+
+.destinationCard {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.destinationCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cardImage {
+  position: relative;
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cardContent {
+  padding: 1.5rem;
+  background-color: #4a6b82;
+  color: white;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.location {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.price {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.ratingStars {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.starFilled {
+  color: #ffd700;
+}
+
+.starEmpty {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .searchBox {
+    max-width: 90%;
+    margin: 0.5rem 0;
+  }
+
+  .categoryBar {
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+  }
+
+  .categoryScroll {
+    gap: 2rem;
+  }
+
+  .destinationsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .destinationsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .searchBox {
+    max-width: 350px;
+    /* Adjusted for tablet */
+  }
+}
+
+.cardImage>span {
+  position: unset !important;
+}
+
+.cardImage img {
+  object-fit: cover !important;
+  position: relative !important;
+  height: 100% !important;
+  width: 100% !important;
+  transition: transform 0.5s ease;
+}
+
+.destinationCard:hover .cardImage img {
+  transform: scale(1.05);
+}
+
+.categoryIcon {
+  filter: brightness(0) invert(1);
+  /* Makes icons white */
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.categoryItem:hover .categoryIcon {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+
+.viewDetail {
+  background-color: #f9f9f7;
+  justify-content: center;
+  display: flex;
+  border-radius: 11px;
+  width: 162px;
+  margin-left: 60px;
+}
+
+.viewContent {
+  border:none;
+  cursor: pointer;
+  color: #2c3e50;
+  font-weight: 900;
+}
+
+.thumbnailImg { width: 100%; height: 200px; object-fit: cover; }
+.ratingStars { margin: 8px 0; }
+.starFilled { color: gold; }
+.starEmpty  { color: #ccc; }
+.noImage    { width:100%; height:200px; background:#eee; display:flex; align-items:center; justify-content:center; }
