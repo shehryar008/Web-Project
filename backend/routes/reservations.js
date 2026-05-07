@@ -1,35 +1,3 @@
-// import express from 'express';
-// import Reservation from '../models/Reservation.js';
-
-// const router = express.Router();
-
-// // POST /api/reservations — create a new reservation
-// router.post('/', async (req, res) => {
-//   try {
-//     const { hotelId, rooms, email, cardNumber } = req.body;
-
-//     if (!hotelId || !rooms || !email || !cardNumber) {
-//       return res.status(400).json({ error: 'hotelId, rooms, email and cardNumber are required' });
-//     }
-
-//     const last4 = cardNumber.slice(-4);
-
-//     const reservation = new Reservation({
-//       hotel:     hotelId,
-//       rooms:     Number(rooms),
-//       email,
-//       cardLast4: last4
-//     });
-
-//     const saved = await reservation.save();
-//     return res.status(201).json(saved);
-//   } catch (err) {
-//     console.error('[reservations] create error:', err);
-//     return res.status(500).json({ error: 'Server error' });
-//   }
-// });
-
-// export default router;
 import express from 'express';
 import Reservation from '../models/Reservation.js';
 

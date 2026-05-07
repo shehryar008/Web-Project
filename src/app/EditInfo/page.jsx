@@ -8,9 +8,9 @@ import styles from '../CSS/editinfo.module.css';
 
 export default function EditInfoPage() {
   const router = useRouter();
-  const userId = typeof window !== 'undefined' ? localStorage.getItem('userId') : null;
-  const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
 
+  const [userId, setUserId] = useState(null);
+  const [token, setToken] = useState(null);
   const [form, setForm] = useState({ username: '', email: '' });
   const [preview, setPreview] = useState(null);
   const [file, setFile] = useState(null);
@@ -18,13 +18,18 @@ export default function EditInfoPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!userId) {
+    const storedUserId = localStorage.getItem('userId');
+    const storedToken = localStorage.getItem('token');
+    setUserId(storedUserId);
+    setToken(storedToken);
+
+    if (!storedUserId) {
       setError('No user logged in');
       setLoading(false);
       return;
     }
-    fetch(`http://localhost:5000/api/auth/user/${userId}`, {
-      headers: { Authorization: `Bearer ${token}` }
+    fetch(`http://localhost:5000/api/auth/user/${storedUserId}`, {
+      headers: { Authorization: `Bearer ${storedToken}` }
     })
       .then((r) => r.json())
       .then((u) => {
@@ -34,7 +39,7 @@ export default function EditInfoPage() {
       })
       .catch(() => setError('Failed to load user'))
       .finally(() => setLoading(false));
-  }, [userId, token]);
+  }, []);
 
   const handleChange = (e) => {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }));

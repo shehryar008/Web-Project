@@ -128,6 +128,17 @@ export default function DetailsPage() {
                                 <h3 className={styles.reviewHeading}>Comment</h3>
                             </div>
                         </div>
+
+                        {/* Google Maps Location */}
+                        <div className={styles.mapContainer}>
+                            <iframe 
+                                className={styles.mapIframe}
+                                src={`https://maps.google.com/maps?q=${encodeURIComponent(hotel.hotelName + ' ' + hotel.location)}&t=&z=13&ie=UTF8&iwloc=&output=embed`}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
                 {/* Right Column */}

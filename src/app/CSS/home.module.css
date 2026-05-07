@@ -164,3 +164,22 @@
 .starFilled { color: gold; }
 .starEmpty  { color: #ccc; }
 .noImage    { width:100%; height:200px; background:#eee; display:flex; align-items:center; justify-content:center; }
+
+.recommendationsSection {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.divider {
+  border: none;
+  border-top: 2px dashed #ccc;
+  margin: 3rem 1rem 1rem 1rem;
+}

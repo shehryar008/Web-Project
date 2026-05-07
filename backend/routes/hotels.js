@@ -5,7 +5,7 @@ import multer from 'multer';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import Hotel from '../models/Hotel.js';
-
+import Reservation from '../models/Reservation.js';
 const router = express.Router();
 
 // ─── Setup __dirname for ES modules ─────────────────────────────────────────
@@ -43,6 +43,42 @@ router.get('/user/:userId', async (req, res) => {
 });
 
 
+// ─── GET /api/hotels/recommendations — AI recommendation engine ─────────────
+router.get('/recommendations', async (req, res) => {
+  try {
+    const { email } = req.query;
+    let recommendedHotels = [];
+    
+    // Content-Based AI Recommendation Logic
+    if (email) {
+      const userReservations = await Reservation.find({ email }).populate('hotel');
+      
+      if (userReservations.length > 0) {
+        // Extract locations user likes
+        const locations = [...new Set(userReservations.map(r => r.hotel?.location).filter(Boolean))];
+        const bookedHotelIds = userReservations.map(r => r.hotel?._id).filter(Boolean);
+        
+        recommendedHotels = await Hotel.find({
+          location: { $in: locations },
+          _id: { $nin: bookedHotelIds }
+        }).sort({ rating: -1 }).limit(3);
+      }
+    }
+    
+    // Fallback if no user history or no matching unbooked hotels
+    if (recommendedHotels.length === 0) {
+      recommendedHotels = await Hotel.find()
+        .sort({ rating: -1, price: 1 })
+        .limit(3);
+    }
+    
+    return res.json(recommendedHotels);
+  } catch (err) {
+    console.error('[hotels] AI recommendation error:', err);
+    return res.status(500).json({ error: 'Server error' });
+  }
+});
+
 // ─── GET /api/hotels/:id — fetch a single hotel by ID ────────────────────────
 router.get('/:id', async (req, res) => {
   try {
@@ -53,18 +89,6 @@ router.get('/:id', async (req, res) => {
     return res.json(hotel);
   } catch (err) {
     console.error('[hotels] get-by-id error:', err);
-    return res.status(500).json({ error: 'Server error' });
-  }
-});
-
-// GET /api/hotels/user/:userId — fetch hotels uploaded by specific user
-router.get('/user/:userId', async (req, res) => {
-  const { userId } = req.params;
-  try {
-    const hotels = await Hotel.find({ uploadedBy: userId }).sort({ createdAt: -1 });
-    return res.json(hotels);
-  } catch (err) {
-    console.error('[hotels] get-by-user error:', err);
     return res.status(500).json({ error: 'Server error' });
   }
 });

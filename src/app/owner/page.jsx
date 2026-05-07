@@ -14,7 +14,7 @@ const Owner = ({ userName, userId }) => {
 
     useEffect(() => {
         const userId = localStorage.getItem('userId');
-        console.log("userID: ", userId.email);
+        console.log("userID: ", userId);
         const token = localStorage.getItem('token');
         if (!userId || !token) return;
 
@@ -43,7 +43,7 @@ const Owner = ({ userName, userId }) => {
 
                 <div className={styles.commentsContainer}>
                     {hotels.map(hotel => (
-                        <div key={hotel.id} className={styles.commentCard}>
+                        <div key={hotel._id} className={styles.commentCard}>
                             <div className={styles.commentImage}>
                                 <img src={hotel.thumbnailImage || hotel.hotelImages[0]} alt="Hotel" />
 

@@ -30,7 +30,7 @@ export default function Page() {
     useEffect(() => {
         if (!query) return;
         const results = hotels.filter(hotel =>
-            (hotel.name && hotel.name.toLowerCase().includes(query)) ||
+            (hotel.hotelName && hotel.hotelName.toLowerCase().includes(query)) ||
             (hotel.location && hotel.location.toLowerCase().includes(query))
         );
         setFilteredHotels(results);
@@ -50,7 +50,7 @@ export default function Page() {
                                     {hotel.thumbnailImage ? (
                                         <img
                                             src={hotel.thumbnailImage}  
-                                            alt={hotel.name}         
+                                            alt={hotel.hotelName}         
                                             className={styles.thumbnailImg}
                                             onError={(e) => {
                                                 e.currentTarget.onerror = null;
@@ -66,7 +66,7 @@ export default function Page() {
                                     )}
                                 </div>
                                 <div className={styles.cardContent}>
-                                    <h3 className={styles.location}>{hotel.name}</h3>
+                                    <h3 className={styles.location}>{hotel.hotelName}</h3>
                                     <p className={styles.location}>{hotel.location}</p>
                                     <p className={styles.price}>${hotel.price} / night</p>
                                     <div className={styles.ratingStars}>

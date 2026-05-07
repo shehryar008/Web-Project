@@ -65,7 +65,7 @@ const Home = () => {
 
             <div className={styles.destinationsGrid}>
                 {filteredHotels.map((hotel) => (
-                    <div key={hotel.id} className={styles.destinationCard}>
+                    <div key={hotel._id} className={styles.destinationCard}>
                         <div className={styles.cardImage}>
                             <Image
                                 src={hotel.thumbnailImage}

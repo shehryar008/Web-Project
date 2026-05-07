@@ -109,6 +109,17 @@ export default function Navbar() {
                 </svg>
               )}
             </div>
+            <button
+              className={styles.logoutButton}
+              onClick={() => {
+                localStorage.removeItem('token');
+                localStorage.removeItem('userId');
+                setUser(null);
+                router.push('/login');
+              }}
+            >
+              Sign Out
+            </button>
           </>
         ) : (
           <span
