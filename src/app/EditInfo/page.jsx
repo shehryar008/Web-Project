@@ -28,7 +28,7 @@ export default function EditInfoPage() {
       setLoading(false);
       return;
     }
-    fetch(`http://localhost:5000/api/auth/user/${storedUserId}`, {
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}`}/api/auth/user/${storedUserId}`, {
       headers: { Authorization: `Bearer ${storedToken}` }
     })
       .then((r) => r.json())
@@ -67,7 +67,7 @@ export default function EditInfoPage() {
     if (file) data.append('profilePic', file);
 
     try {
-      const res = await fetch(`http://localhost:5000/api/auth/update/${userId}`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}`}/api/auth/update/${userId}`, {
         method: 'PUT',
         headers: { Authorization: `Bearer ${token}` },
         body: data

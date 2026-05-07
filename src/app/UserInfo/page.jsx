@@ -19,12 +19,12 @@ const UserInfo = ({ userName, userId, email }) => {
             if (!userId || !token) return;
 
             try {
-                const userRes = await fetch(`http://localhost:5000/api/auth/user/${userId}`, {
+                const userRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL || `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}`}/api/auth/user/${userId}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 const userData = await userRes.json();
 
-                const reservationsRes = await fetch(`http://localhost:5000/api/reservations?email=${userData.email}`, {
+                const reservationsRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL || `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}`}/api/reservations?email=${userData.email}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 const reservationsData = await reservationsRes.json();
@@ -34,7 +34,7 @@ const UserInfo = ({ userName, userId, email }) => {
                 const hotelMap = {};
 
                 await Promise.all(hotelIds.map(async (hotelId) => {
-                    const res = await fetch(`http://localhost:5000/api/hotels/${hotelId}`, {
+                    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}`}/api/hotels/${hotelId}`, {
                         headers: { Authorization: `Bearer ${token}` }
                     });
                     const hotelData = await res.json();

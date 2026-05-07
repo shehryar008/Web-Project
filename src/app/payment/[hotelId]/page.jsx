@@ -28,7 +28,7 @@ export default function PaymentPage() {
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/hotels/${hotelId}`);
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}`}/api/hotels/${hotelId}`);
         if (!res.ok) throw new Error(`Hotel fetch failed: ${res.status}`);
         const data = await res.json();
         setHotel(data);
@@ -53,7 +53,7 @@ export default function PaymentPage() {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/reservations', {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/reservations`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ hotelId, rooms, email, cardNumber }),

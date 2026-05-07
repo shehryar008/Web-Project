@@ -18,7 +18,7 @@ export default function Userdetails({ userName, userId }) {
         }
 
         // 2) Fetch user profile
-        fetch(`http://localhost:5000/api/auth/user/${userId}`, {
+        fetch(`${process.env.NEXT_PUBLIC_API_URL || `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}`}/api/auth/user/${userId}`, {
             headers: { Authorization: `Bearer ${token}` }
         })
             .then(res => res.json())

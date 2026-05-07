@@ -104,7 +104,7 @@ const AddHotel = () => {
                 form.append('hotelImages', file);
             });
 
-            const res = await fetch('http://localhost:5000/api/hotels', {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/hotels`, {
                 method: 'POST',
                 body: form,
             });

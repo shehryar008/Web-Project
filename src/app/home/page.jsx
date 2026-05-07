@@ -17,7 +17,7 @@ export default function Home() {
         async function loadData() {
             try {
                 // Fetch all hotels
-                const res = await fetch('http://localhost:5000/api/hotels');
+                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/hotels`);
                 console.log('[Home] fetch status:', res.status);
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 const data = await res.json();
@@ -30,7 +30,7 @@ export default function Home() {
                 
                 if (userId && token) {
                     try {
-                        const userRes = await fetch(`http://localhost:5000/api/auth/user/${userId}`, {
+                        const userRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL || `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}`}/api/auth/user/${userId}`, {
                             headers: { Authorization: `Bearer ${token}` }
                         });
                         if (userRes.ok) {
@@ -42,7 +42,7 @@ export default function Home() {
                     }
                 }
 
-                const resRec = await fetch(`http://localhost:5000/api/hotels/recommendations?email=${encodeURIComponent(email)}`);
+                const resRec = await fetch(`${process.env.NEXT_PUBLIC_API_URL || `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}`}/api/hotels/recommendations?email=${encodeURIComponent(email)}`);
                 if (resRec.ok) {
                     const dataRec = await resRec.json();
                     setRecommendations(dataRec);

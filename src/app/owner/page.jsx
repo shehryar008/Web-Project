@@ -18,7 +18,7 @@ const Owner = ({ userName, userId }) => {
         const token = localStorage.getItem('token');
         if (!userId || !token) return;
 
-        fetch(`http://localhost:5000/api/hotels/user/${userId}`, {
+        fetch(`${process.env.NEXT_PUBLIC_API_URL || `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}`}/api/hotels/user/${userId}`, {
             headers: { Authorization: `Bearer ${token}` }
         })
             .then(res => res.json())

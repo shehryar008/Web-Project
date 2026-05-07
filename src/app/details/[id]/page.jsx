@@ -30,7 +30,7 @@ export default function DetailsPage() {
     useEffect(() => {
         async function fetchHotel() {
             try {
-                const res = await fetch(`http://localhost:5000/api/hotels/${id}`);
+                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}`}/api/hotels/${id}`);
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 const data = await res.json();
                 setHotel(data);
